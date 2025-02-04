@@ -7,6 +7,8 @@ import {
 	MessageSquare,
 	Music,
 	VideoIcon,
+	PenTool,
+	Pen
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -15,40 +17,40 @@ import { cn } from "@/lib/utils";
 
 const tools = [
 	{
-		label: "Conversation",
+		label: "Chat With Docs",
 		icon: MessageSquare,
 		color: "text-violet-500",
 		bgColor: "bg-violet-500/10",
-		href: "/conversation",
+		href: "/chat-with-docs",
 	},
 	{
-		label: "Music Generation",
-		icon: Music,
+		label: "Logo and Branding Generator",
+		icon: ImageIcon,
 		color: "text-emerald-500",
 		bgColor: "bg-emerald-500/10",
-		href: "/music",
+		href: "/logo-generator",
 	},
 	{
-		label: "Image Generation",
-		icon: ImageIcon,
+		label: "Proposal and Contract Writer",
+		icon: PenTool,
 		color: "text-pink-700",
 		bgColor: "bg-pink-700/10",
-		href: "/image",
+		href: "/writer",
 	},
-	{
-		label: "Video Generation",
-		icon: VideoIcon,
-		color: "text-orange-700",
-		bgColor: "bg-orange-700/10",
-		href: "/video",
-	},
-	{
-		label: "Code Generation",
-		icon: Code,
-		color: "text-green-700",
-		bgColor: "bg-green-700/10",
-		href: "/code",
-	},
+	// {
+	// 	label: "Video Generation",
+	// 	icon: VideoIcon,
+	// 	color: "text-orange-700",
+	// 	bgColor: "bg-orange-700/10",
+	// 	href: "/video",
+	// },
+	// {
+	// 	label: "Code Generation",
+	// 	icon: Code,
+	// 	color: "text-green-700",
+	// 	bgColor: "bg-green-700/10",
+	// 	href: "/code",
+	// },
 ];
 
 const DashboardPage = () => {
@@ -61,8 +63,7 @@ const DashboardPage = () => {
 					Explore the power of AI
 				</h2>
 				<p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-					Prometheus is a platform that allows you to generate music, videos,
-					and code using the power of AI.
+					Enhance your productivity with our cutting edge AI tools.
 				</p>
 			</div>
 			<div className="px-4 md:px-20 lg:px-32 space-y-4">

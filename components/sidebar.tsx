@@ -1,6 +1,6 @@
 "use client";
 
-import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
+import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, PenTool, Settings, VideoIcon } from "lucide-react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,35 +20,44 @@ const routes = [
     color: "text-sky-500",
   },
   {
-    label: "Conversation",
-    icon: MessageSquare,
-    href: "/conversation",
-    color: "text-violet-500",
-  },
+		label: "Chat With Docs",
+		icon: MessageSquare,
+		color: "text-violet-500",
+		bgColor: "bg-violet-500/10",
+		href: "/chat-with-docs",
+	},
   {
-    label: "Image Generation",
-    icon: ImageIcon,
-    href: "/image",
-    color: "text-pink-700",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    href: "/video",
-    color: "text-orange-700",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    href: "/music",
-    color: "text-emerald-500",
-  },
-  {
-    label: "Code Generation",
-    icon: Code,
-    href: "/code",
-    color: "text-green-700",
-  },
+		label: "Logo and Branding Generator",
+		icon: ImageIcon,
+		color: "text-emerald-500",
+		bgColor: "bg-emerald-500/10",
+		href: "/logo-generator",
+	},
+	{
+		label: "Proposal and Contract Writer",
+		icon: PenTool,
+		color: "text-pink-700",
+		bgColor: "bg-pink-700/10",
+		href: "/writer",
+	},
+  // {
+  //   label: "Video Generation",
+  //   icon: VideoIcon,
+  //   href: "/video",
+  //   color: "text-orange-700",
+  // },
+  // {
+  //   label: "Music Generation",
+  //   icon: Music,
+  //   href: "/music",
+  //   color: "text-emerald-500",
+  // },
+  // {
+  //   label: "Code Generation",
+  //   icon: Code,
+  //   href: "/code",
+  //   color: "text-green-700",
+  // },
   {
     label: "Settings",
     icon: Settings,
